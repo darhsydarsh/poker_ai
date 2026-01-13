@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
 from deck.Deck import Deck
-import win_conditions.royal_flush as wc
+from win_conditions.royal_flush import royale_flush_check
 
 
 player_one_hand = []
@@ -29,5 +29,8 @@ def run():
     player_cards = player_one_hand + card_drawn_hand
     print(player_cards)
 
-    wc.royale_flush_check(player_cards  )
+
+
+    royale_flush_check(player_cards)
+
 run()

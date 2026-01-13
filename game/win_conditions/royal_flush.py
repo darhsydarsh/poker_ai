@@ -5,7 +5,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
 from deck.Deck import Deck
-import main.Game as game
 
 
 royal_flush_heart = [[10,"h"],[11,"h"],[12,"h"],[13,"h"],[14,"h"]]
@@ -15,7 +14,6 @@ royal_flush_diamond = [[10,"d"],[11,"d"],[12,"d"],[13,"d"],[14,"d"]]
 
 royale_flushes = [royal_flush_heart, royal_flush_spade, royal_flush_club, royal_flush_diamond]
 
-player_cards =  [[10,"c"], [5,"s"],[11,"c"],[12,"c"],[6,"s"],[13,"c"],[14,"c"]]
 
 def royale_flush_check(player_cards):
     for royal_flush in royale_flushes:
@@ -25,4 +23,3 @@ def royale_flush_check(player_cards):
     print("No Royal Flush Found")
     return False 
 
-royale_flush_check(player_cards)
