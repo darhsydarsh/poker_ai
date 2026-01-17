@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
 from deck.Deck import Deck
-from win_conditions.royal_flush import royale_flush_check
+from game.win_conditions.win_conditions import *
 
 
 player_one_hand = []
